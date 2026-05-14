@@ -1,16 +1,16 @@
-# Simulador de SO Multitarefa preemptivo
+# Simulador de SO Multitarefa
 
-Projeto desenvolvido em C para simulação de escalonamento de processos em um simulador de Sistemas Operacionais Multitarefas preemptivo.
+Simulador de escalonamento de processos com suporte a múltiplas CPUs.
 
-## Funcionalidades
-- Escalonamento SRTF
-- Escalonamento PRIOp
-- Execução passo a passo
-- Execução completa
-- Geração de diagrama de Gantt SVG
-- Suporte a múltiplas CPUs
+## Algoritmos suportados
+- SRTF (Shortest Remaining Time First)
+- PRIOP (Prioridade Preemptiva)
 
-## Desenvolvedores 
+## Como compilar
+make
 
--João Vitor Bernardi
--Lais Sayoko Toda Duarte
+## Como executar
+./simulador
+
+## Como limpar
+make clean
