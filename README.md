@@ -12,5 +12,5 @@ Projeto desenvolvido em C para simulação de escalonamento de processos em um s
 
 ## Desenvolvedores 
 
-João Vitor Bernardi
-Lais Sayoko Toda Duarte
+-João Vitor Bernardi
+-Lais Sayoko Toda Duarte
