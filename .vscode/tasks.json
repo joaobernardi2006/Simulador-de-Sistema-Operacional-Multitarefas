@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // Compila todos os fontes com gcc. Lista os .c explicitamente para
+            // funcionar em qualquer shell (Windows cmd/PowerShell nao expandem *.c).
+            "label": "build simulador",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-std=c11",
+                "-Wall",
+                "${workspaceFolder}/src/main.c",
+                "${workspaceFolder}/src/configuracao.c",
+                "${workspaceFolder}/src/escalonador.c",
+                "${workspaceFolder}/src/fila.c",
+                "${workspaceFolder}/src/simulacao.c",
+                "${workspaceFolder}/src/visualizacao.c",
+                "-I${workspaceFolder}/include",
+                "-o",
+                "${workspaceFolder}/simulador.exe",
+                "-lm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compila o simulador (gera ./simulador ou simulador.exe no Windows)"
+        }
+    ]
+}
